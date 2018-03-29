@@ -8,9 +8,7 @@
     <artifactId>learning</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>something</module>
-    </modules>
+
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -45,20 +43,20 @@
         </dependency>
     </dependencies>
 
-    <!-- Package as an executable jar -->
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <profiles>
-                        <profile>dev</profile>
-                        <profile>local</profile>
-                    </profiles>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+     <!--Package as an executable jar-->
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+                <!--&lt;!&ndash;<configuration>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<profiles>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<profile>dev</profile>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<profile>local</profile>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</profiles>&ndash;&gt;-->
+                <!--&lt;!&ndash;</configuration>&ndash;&gt;-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 
 </project>
